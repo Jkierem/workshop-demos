@@ -1,0 +1,36 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        background-color: red;
+        width: 25%;
+    }
+    50% {
+        transform: rotate(180deg);
+        background-color: blue;
+        width: 100%;
+    }
+    100% {
+        transform: rotate(0deg);
+        background-color: red;
+        width: 25%
+    }
+}
+
+.animated {
+    background-color: red;
+    width: 25%;
+    height: 40%;
+}
+
+.animated:hover {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-timing-function: ease;
+}
+
+#container {
+    width: 300px;
+    height: 300px;
+}
+

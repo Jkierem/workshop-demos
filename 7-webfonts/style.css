@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "NotRoboto";
+    src: url('./OpenSans-Regular.ttf');
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+}
+
+div.font {
+    font-family: "NotRoboto";
+}

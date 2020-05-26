@@ -1,0 +1,33 @@
+* {
+    background-color: orangered;
+}
+
+h1 {
+    background-color: orangered;
+}
+
+.class-selector {
+    background-color: orangered;
+}
+
+#id-selector {
+    background-color: orangered;
+}
+
+[attribute] {
+    background-color: orangered;
+}
+
+[attribute=value] {
+    background-color: orangered;
+}
+
+/*hover pseudo selector*/
+any-selector:hover {
+    background-color: orangered;
+}
+
+/**before pseudo element*/
+any-selector::before {
+    content: "anything"
+}

@@ -1,0 +1,70 @@
+#relative {
+    font-size: 2vw;
+}
+
+div {
+    background-color: royalblue;
+    padding: 6px;
+    height: 32px;
+    display: block;
+}
+
+div.mm {
+    width: 40mm;
+}
+
+div.cm {
+    width: 5cm;
+}
+
+div.in {
+    width: 3in;
+}
+
+div.px {
+    width: 60px;
+}
+
+div.pt {
+    width: 36pt;
+}
+
+div.pc {
+    width: 3pc;
+}
+
+div.em {
+    width: 10em;
+}
+
+div.ex {
+    width: 10ex;
+}
+
+div.ch {
+    width: 10ch;
+}
+
+div.rem {
+    width: 10rem;
+}
+
+div.vw {
+    width: 10vw;
+}
+
+div.vh {
+    width: 10vh;
+}
+
+div.vmin {
+    width: 10vmin;
+}
+
+div.vmax {
+    width: 10vmax
+}
+
+div.percent {
+    width: 10%;
+}

@@ -1,0 +1,47 @@
+section {
+    margin: 20px;
+}
+
+.taller-than-most {
+    height: 50px;
+    padding: 10px;
+}
+
+#sticky {
+    height: 500px;
+}
+
+div {
+    border: 1px solid red;
+}
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border-color: darkviolet;
+}
+
+div.absolute {
+    position: absolute;
+    border-color: navy;
+    right: 6px;
+    top: 0px;
+}
+
+div.fixed {
+    position: fixed;
+    border-color: hotpink;
+    bottom: 0px;
+}
+
+div.relative {
+    position: relative;
+    border-color: green;
+    left: 16px;
+}
+
+div .fucsia {
+    color: fuchsia;
+}
+

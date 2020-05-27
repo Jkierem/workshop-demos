@@ -1,14 +1,15 @@
 .flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;   
     padding: 16px;
     background-color: royalblue;
+    height: 200px;
 }
 
-div {
+div.box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,4 +17,8 @@ div {
     font-size: 2em;
     width: 2em;
     height: 2em;
+}
+
+section {
+    margin-bottom: 24px;
 }

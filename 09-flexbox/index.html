@@ -7,11 +7,114 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="flex">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
+    <section id="controls">
+        <fieldset>
+            <legend>Flex container</legend>
+            <label for="direction">flex-direction:</label>
+            <select name="direction" id="direction">
+                <option value="row">row</option>
+                <option value="row-reverse">row-reverse</option>
+                <option value="column">column</option>
+                <option value="column-reverse">column-reverse</option>
+                <optgroup label="Global values">
+                    <option value="inherit">inherit</option>
+                    <option value="initial">initial</option>
+                    <option value="unset">unset</option>
+                </optgroup>
+            </select>
+            <label for="wrap">flex-wrap:</label>
+            <select name="wrap" id="wrap">
+                <option value="nowrap">nowrap</option>
+                <option value="wrap">wrap</option>
+                <option value="wrap-reverse">wrap-reverse</option>
+                <optgroup label="Global values">
+                    <option value="inherit">inherit</option>
+                    <option value="initial">initial</option>
+                    <option value="unset">unset</option>
+                </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>justify-content</legend>
+            <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content">Explanation</a></div>
+            <label for="jutify">Values:</label>
+            <select name="justify" id="justify">
+                <optgroup label="Positional alignment">
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="center">center</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="left">left</option>
+                    <option value="right">right</option>
+                </optgroup>
+                <optgroup label="Normal alignment">
+                    <option value="normal">normal</option>
+                </optgroup>
+                <optgroup label="Distributed alignment">
+                    <option value="space-between" selected>space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="space-evenly">space-evenly</option>
+                    <option value="stretch">stretch</option>
+                </optgroup>
+                <optgroup label="Global values">
+                    <option value="inherit">inherit</option>
+                    <option value="initial">initial</option>
+                    <option value="unset">unset</option>
+                </optgroup>
+            </select>
+            <label for="overfow">Overflow position (only for positional alignment):</label>
+            <select name="modifier" id="justifyModifier">
+                <option value="">None</option>
+                <option value="safe">safe</option>
+                <option value="unsafe">unsafe</option>
+            </select>
+            <div>Current css value: <span id="current-justify">space-between</span></div>
+        </fieldset>
+        <fieldset>
+            <legend>align-items</legend>
+            <div><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">Explanation</a></div>
+            <label for="jutify">Values:</label>
+            <select name="align" id="align">
+                <optgroup label="Positional alignment">
+                    <option value="start">start</option>
+                    <option value="end">end</option>
+                    <option value="center" selected>center</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                </optgroup>
+                <optgroup label="Normal alignment">
+                    <option value="normal">normal</option>
+                </optgroup>
+                <optgroup label="Distributed alignment">
+                    <option value="stretch">stretch</option>
+                </optgroup>
+                <optgroup label="Baseline alignment">
+                    <option value="baseline">baseline</option>
+                    <option value="first baseline">first baseline</option>
+                    <option value="last baseline">last baseline</option>
+                </optgroup>
+                <optgroup label="Global values">
+                    <option value="inherit">inherit</option>
+                    <option value="initial">initial</option>
+                    <option value="unset">unset</option>
+                </optgroup>
+            </select>
+            <label for="overfow">Overflow position (only for positional alignment):</label>
+            <select name="modifier" id="alignModifier">
+                <option value="">None</option>
+                <option value="safe">safe</option>
+                <option value="unsafe">unsafe</option>
+            </select>
+            <div>Current css value: <span id="current-align">center</span></div>
+        </fieldset>
+    </section>
+    <section id="container" class="flex">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
     </section>
 </body>
+<script src="./index.js"></script>
 </html>

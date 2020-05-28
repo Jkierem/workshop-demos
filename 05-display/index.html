@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            padding: 20px;
+        }
+
+        section *:nth-child(1) {
+            border: 1px solid red;
+        }
+
+        section *:nth-child(2) {
+            border: 1px solid green;
+        }
+
+        section *:nth-child(3) {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        #blocks * {
+            display: block;
+            height: 50px;
+        }
+
+        #inline * {
+            display: inline;
+            height: 50px;
+        }
+
+        #inline-block * {
+            display: inline-block;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <section id="blocks">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+
+    <section id="inline">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </section>
+
+    <section id="inline-block">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </section>
+</body>
+</html>
